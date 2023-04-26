@@ -1,6 +1,8 @@
 .video-card {
   display: inline-block;
   width: 300px;
+  vertical-align: top;
+  margin-right: 15px;
 }
 
 .thumbnail {
@@ -12,8 +14,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  margin-top: 10px;
-  width: 300px;
+  margin-top: 0;
 }
 
 .channel-name,
@@ -24,4 +25,20 @@
   line-height: 18px;
   color: rgb(96, 96, 96);
   margin: 0;
+}
+
+.channel-picture {
+  width: 50px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.video-info {
+  width: 200px;
+  display: inline-block;
+}
+
+.profile-picture {
+  width: 100%;
+  /* border-radius: 30px; */
 }
