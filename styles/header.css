@@ -7,6 +7,14 @@
   top: 0;
   right: 0;
   left: 0;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  z-index: 100;
+  /* z-index is added to put the header on top of anything. 
+  Items with position relative or absolute or fixed take precedence
+  over items with position static. To overcome this issue we 
+  give z-index a  value greater than 0.
+  usually items appear in the order of their position in the HTML. 
+  The bottom ones appear on top of the ones in the above.*/
 }
 
 .left-section {
