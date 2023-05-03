@@ -104,6 +104,25 @@
   height: 24px;
 }
 
+.notifications-icon-container {
+  position: relative;
+}
+
+.notifications-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-size: 11px;
+  font-family: Roboto, Arial;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
 .current-user-picture {
   height: 32px;
   border-radius: 16px;
