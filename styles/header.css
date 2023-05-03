@@ -1,25 +1,102 @@
 .header {
   height: 55px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .left-section {
-  background-color: lightblue;
-  width: 150px;
+  display: flex;
+  align-items: center;
+}
+.hamurger-menu {
+  height: 25px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.youtube-logo {
+  height: 20px;
 }
 
 .middle-section {
-  background-color: lightcoral;
   flex: 1;
   margin-left: 70px;
   margin-right: 35px;
   max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1;
+  height: 37px;
+  font-size: 16px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 2px;
+  padding-left: 10px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+  /* ability to shrink the search bar, we make the width 0. */
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.search-button {
+  height: 38px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+}
+
+.search-icon {
+  height: 20px;
+}
+
+.voice-search-button {
+  height: 38px;
+  width: 40px;
+  background-color: rgb(245, 245, 245);
+  border: none;
+  border-radius: 20px;
+}
+
+.voice-search-icon {
+  height: 20px;
+  margin-top: 4px;
 }
 
 .right-section {
-  background-color: lightblue;
-  width: 200px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+  /* flex shrink 0 helps to not shrink the flex box items when the screen size is reduced */
+}
+
+.upload-icon {
+  height: 24px;
+}
+.youtube-apps-icon {
+  height: 24px;
+}
+
+.notifications-icon {
+  height: 24px;
+}
+
+.current-user-picture {
+  height: 32px;
+  border-radius: 16px;
 }
