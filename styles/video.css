@@ -55,3 +55,26 @@
   padding: 4px;
   border-radius: 3px;
 }
+
+@media (max-width: 500px) {
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 750px) {
+  .videos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 1199px) {
+  .videos-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .videos-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
