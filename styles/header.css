@@ -65,6 +65,45 @@
   margin-left: -1px;
   margin-right: 10px;
 }
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-appicon-container,
+.notifications-icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-appicon-container .tooltip,
+.notifications-icon-container .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+  /* supresses line breaks within source */
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-appicon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+  opacity: 1;
+}
 
 .search-icon {
   height: 20px;
@@ -80,7 +119,6 @@
 
 .voice-search-icon {
   height: 20px;
-  margin-top: 4px;
 }
 
 .right-section {
